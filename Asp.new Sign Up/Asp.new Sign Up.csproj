@@ -67,9 +67,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="login.aspx" />
+    <Content Include="Stock\422-4222871_640-x-640-15-facebook-small-icon-png.png" />
+    <Content Include="Stock\burgers-seamless-pattern-background-hand-drawn-hamburger-french-fries-fast-food-junk-american-vector-illustration-restaurant-143495721.jpg" />
+    <Content Include="Stock\burger_1.jpg" />
+    <Content Include="Stock\googleplus-logos-02.png" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +94,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
