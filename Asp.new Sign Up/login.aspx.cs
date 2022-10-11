@@ -23,6 +23,19 @@ namespace Asp.new_Sign_Up
 
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from login where uname= @username and passwd = @password", con );
+            cmd.Parameters.AddWithValue("@username", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@password", TextBox2.Text);
+
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                Response.Redirect("Home.aspx");
+            }
+            else
+            {
+                Label1.Text = "Username or Password Incorrect...!";
+            }
+            con.Close();
 
         }
     }

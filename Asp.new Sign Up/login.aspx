@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <section>
-            <img src="Stock/burger_1.jpg" class="panel" />
+           <img src="Stock/burger_1.jpg" width="80%" class="panel" /> 
         </section>
         <div class="sec2">
             <div class="container">
@@ -22,8 +22,10 @@
                 <div class="content">
                     <h2>Sign Up</h2>
                     <asp:TextBox ID="TextBox1" placeholder="Username" runat="server"></asp:TextBox><br />
-                    <asp:TextBox ID="TextBox2" placeholder="Password" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="TextBox2" placeholder="Password"  runat="server"></asp:TextBox><br />
                     <asp:Button ID="Submit" runat="server" OnClick="Submit_Click" Text="Sumbit" />
+
+                    <asp:Label ID="Label1" Style="padding-left:4vw;padding-top:2vw;" Font-Size="Medium" ForeColor="red" runat="server" Text="Label"></asp:Label>
                 </div>
             </div>
         </div>
