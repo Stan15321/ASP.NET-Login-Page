@@ -16,17 +16,18 @@
         <div class="sec2">
             <div class="container">
                 <div class="social">
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Stock/422-4222871_640-x-640-15-facebook-small-icon-png.png" />
-                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Stock/googleplus-logos-02.png" />
+                    <a href="https://wwww.facebook.com" ><asp:Image ID="Image1" runat="server" ImageUrl="~/Stock/422-4222871_640-x-640-15-facebook-small-icon-png.png" /></a>
+                    <a href="https://plus.google.com" ><asp:Image ID="Image2" runat="server" ImageUrl="~/Stock/googleplus-logos-02.png" /></a>
                 </div>
                 <div class="content">
                     <h2>Sign Up</h2>
                     <asp:TextBox ID="TextBox1" placeholder="Username" runat="server"></asp:TextBox><br />
                     <asp:TextBox ID="TextBox2" placeholder="Password" runat="server"></asp:TextBox><br />
-                    <asp:Button ID="Submit" runat="server" Text="Sumbit" />
+                    <asp:Button ID="Submit" runat="server" OnClick="Submit_Click" Text="Sumbit" />
                 </div>
             </div>
         </div>
     </form>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [login]"></asp:SqlDataSource>
 </body>
 </html>

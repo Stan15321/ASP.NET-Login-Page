@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="login.aspx" />
     <Content Include="Stock\422-4222871_640-x-640-15-facebook-small-icon-png.png" />
     <Content Include="Stock\burgers-seamless-pattern-background-hand-drawn-hamburger-french-fries-fast-food-junk-american-vector-illustration-restaurant-143495721.jpg" />
